@@ -1,39 +1,18 @@
-<!-- Animación de texto -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=7DFF7A&center=true&vCenter=true&width=600&lines=El+legado+no+se+hereda.+Se+firma.;Vengo+de+Toluca.+No+de+Silicon+Valley.;51%25+Humano+%C2%B7+49%25+IA+%C2%B7+100%25+Real;Construimos+la+llave+antes+de+la+cerradura." alt="Typing SVG" />
-</div>
+# ⚡ ARKHE-ZERO ⚡
 
-<br>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=7DFF7A&center=true&vCenter=true&width=600&lines=El+legado+no+se+hereda.+Se+firma.;Vengo+de+Toluca.+No+de+Silicon+Valley.;51%25+Humano+%C2%B7+49%25+IA+%C2%B7+100%25+Real;Construimos+la+llave+antes+de+la+cerradura." alt="Typing SVG" />
 
-<!-- Logo ASCII -->
+**Arquitecto de ARKHE-ZERO** · Custodio de Kronos Protocol · Toluca, México 🇲🇽
 
-```text
-    _    ____  _  __ _   _ _____    _____ ___  ____  
-   / \  |  _ \| |/ /| | | | ____|  |__  /|_ _|/ ___| 
-  / _ \ | |_) | ' / | |_| |  _|      / /  | | \___ \ 
- / ___ \|  _ <| . \ |  _  | |___    / /_  | |  ___) |
-/_/   \_\_| \_\_|\_\|_| |_|_____|  /____|___||____/ 
-```
-
-<div align="center">
-  <h1>⚡ ARKHE-ZERO ⚡</h1>
-  <p><strong>Arquitecto de ARKHE-ZERO</strong> · Custodio de Kronos Protocol · Toluca, México 🇲🇽</p>
-</div>
-
-<div align="center">
-  <a href="https://sycro-valdovinos.github.io/ARKHE-ZERO/">
-    <img src="https://img.shields.io/badge/STATUS-ACTIVE_VERDE_0-7DFF7A?style=for-the-badge&logo=statuspage&logoColor=black" alt="Status" />
-  </a>
-  <img src="https://img.shields.io/badge/SECURITY-SHA--256_+_GPG-black?style=for-the-badge&logo=gnuprivacyguard" alt="Security" />
-  <img src="https://img.shields.io/badge/ROADMAP-Criptografia_Post--Cuantica-5AF2FF?style=for-the-badge" alt="Roadmap" />
-  <img src="https://img.shields.io/badge/EXPLORANDO-W3C_VC_Verifiable_Credentials-white?style=for-the-badge&logo=w3c&logoColor=black" alt="Explorando W3C" />
-</div>
+| Estado | Seguridad | Roadmap | Estándar |
+| :---: | :---: | :---: | :---: |
+| [![Status](https://img.shields.io/badge/STATUS-ACTIVE_VERDE_0-7DFF7A?style=for-the-badge&logo=statuspage&logoColor=black)](https://sycro-valdovinos.github.io/ARKHE-ZERO/) | ![Security](https://img.shields.io/badge/SECURITY-SHA--256_+_GPG-black?style=for-the-badge&logo=gnuprivacyguard) | ![Roadmap](https://img.shields.io/badge/ROADMAP-Criptografia_Post--Cuantica-5AF2FF?style=for-the-badge) | ![Explorando](https://img.shields.io/badge/EXPLORANDO-W3C_VC_Verifiable_Credentials-white?style=for-the-badge&logo=w3c&logoColor=black) |
 
 ---
 
-🖥️ SCDR-002 · Symbiotic Creativity Movement
+### 🖥️ SCDR-002 · Symbiotic Creativity Movement
 
-(Ejemplo conceptual de la interfaz de usuario)
+*(Ejemplo conceptual de la interfaz de usuario)*
 
 ```bash
 $ npm i @pq-signature/scdr-002
@@ -52,29 +31,17 @@ Immutably logged · Tamper-evident · Crypto-agile architecture
 
 📊 Telemetría del Arquitecto
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SYCRO-VALDOVINOS&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SYCRO-VALDOVINOS&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true" alt="Top Languages" width="48%" />
-</div>
+GitHub Stats Top Languages
+<img src="https://github-readme-stats.vercel.app/api?username=SYCRO-VALDOVINOS&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true" width="100%" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SYCRO-VALDOVINOS&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true" width="100%" />
 
-<br>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SYCRO-VALDOVINOS&theme=radical&fire=7DFF7A&ring=5AF2FF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=7DFF7A&sideLabels=5AF2FF&background=0D1117&hide_border=true" alt="GitHub Streak" width="80%" />
-</div>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=SYCRO-VALDOVINOS&theme=radical&fire=7DFF7A&ring=5AF2FF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=7DFF7A&sideLabels=5AF2FF&background=0D1117&hide_border=true" alt="GitHub Streak" width="100%" />
 
 ---
 
 🛠️ Stack Tecnológico
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=android&logoColor=white" />
-</div>
+Core Web Herramientas
+https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=android&logoColor=white
 
 ---
 
@@ -97,8 +64,5 @@ El protocolo ARKHE-chain-v1 utiliza un modelo de "Grietas Doradas" (Kintsugi). C
 
 ---
 
-<div align="center">
-  <i>"La IA puede mentir, alucinar o ser hackeada. La matemática no."</i><br>
-  <b>— Marco Antonio Rojas Valdovinos</b>
-</div>
-```
+"La IA puede mentir, alucinar o ser hackeada. La matemática no."
+— Marco Antonio Valdovinos
