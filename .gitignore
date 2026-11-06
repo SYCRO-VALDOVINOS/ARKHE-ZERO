@@ -12,3 +12,6 @@ __pycache__/
 .venv/
 .DS_Store
 *.bak
+.agents/
+skills-lock.json
+arkhe-manifest.jsonl
