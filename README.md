@@ -1,4 +1,3 @@
-
 <!-- Animación de texto -->
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=7DFF7A&center=true&vCenter=true&width=600&lines=El+legado+no+se+hereda.+Se+firma.;Vengo+de+Toluca.+No+de+Silicon+Valley.;51%25+Humano+%C2%B7+49%25+IA+%C2%B7+100%25+Real;Construimos+la+llave+antes+de+la+cerradura." alt="Typing SVG" />
@@ -6,7 +5,8 @@
 
 <br>
 
-<!-- Logo ASCII (Fuera del div para no romper el Markdown) -->
+<!-- Logo ASCII -->
+
 ```text
     _    ____  _  __ _   _ _____    _____ ___  ____  
    / \  |  _ \| |/ /| | | | ____|  |__  /|_ _|/ ___| 
@@ -80,7 +80,8 @@ Immutably logged · Tamper-evident · Crypto-agile architecture
 
 🛡️ El Sello Kintsugi (Concepto)
 
-El protocolo ARKHE-chain-v1 utiliza un modelo de "Grietas Doradas" (Kintsugi). Cada archivo modificado rompe la cadena, pero deja un rastro criptográfico. 
+El protocolo ARKHE-chain-v1 utiliza un modelo de "Grietas Doradas" (Kintsugi). Cada archivo modificado rompe la cadena, pero deja un rastro criptográfico.
+
 (Nota: El siguiente es un mockup de UI, no representa una ejecución real del sistema).
 
 ```json
