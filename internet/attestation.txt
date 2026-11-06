@@ -14,15 +14,15 @@ arkhe-chain-v1.md   sha256=9178782490cbe5aa1b3d58844523c819653b111e950219e8704c1
 
 Public URLs
 -----------
-https://marcorojas17.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.txt
-https://marcorojas17.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.txt.asc
-https://marcorojas17.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.md
-https://marcorojas17.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.md.asc
-https://marcorojas17.github.io/ARKHE-ZERO/internet/arkhe-pubkey.asc
+https://sycro-valdovinos.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.txt
+https://sycro-valdovinos.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.txt.asc
+https://sycro-valdovinos.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.md
+https://sycro-valdovinos.github.io/ARKHE-ZERO/internet/arkhe-chain-v1.md.asc
+https://sycro-valdovinos.github.io/ARKHE-ZERO/internet/arkhe-pubkey.asc
 
 How to verify
 -------------
-  base="https://marcorojas17.github.io/ARKHE-ZERO/internet"
+  base="https://sycro-valdovinos.github.io/ARKHE-ZERO/internet"
   curl -fSLO "$base/arkhe-pubkey.asc"
   curl -fSLO "$base/arkhe-chain-v1.txt"
   curl -fSLO "$base/arkhe-chain-v1.txt.asc"

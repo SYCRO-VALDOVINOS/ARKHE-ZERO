@@ -47,13 +47,13 @@ ARKHE-ZERO no desciende a ninguna capa secreta. Hace lo contrario: convierte lo 
 
 ## Cómo verificar (3 comandos)
 
-    curl -sO https://marcorojas17.github.io/ARKHE-ZERO/chain.log
-    curl -sO https://marcorojas17.github.io/ARKHE-ZERO/chain.log.asc
+    curl -sO https://sycro-valdovinos.github.io/ARKHE-ZERO/chain.log
+    curl -sO https://sycro-valdovinos.github.io/ARKHE-ZERO/chain.log.asc
     gpg --verify chain.log.asc chain.log
 
 O en el navegador, sin instalar nada:
 
-    https://marcorojas17.github.io/ARKHE-ZERO/verify.html?chain=./chain.log
+    https://sycro-valdovinos.github.io/ARKHE-ZERO/verify.html?chain=./chain.log
 
 Si dice **VERDE**, la cadena es íntegra. Si dice **ROJO**, alguien la alteró.
 

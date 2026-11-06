@@ -4,7 +4,7 @@
 **Autor:** Marco Antonio Rojas Valdovinos
 **Fecha:** 26 de octubre de 2026
 **Repo:** github.com/Marcorojas17/ARKHE-ZERO
-**Deploy:** marcorojas17.github.io/ARKHE-ZERO/
+**Deploy:** sycro-valdovinos.github.io/ARKHE-ZERO/
 
 ---
 
