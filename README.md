@@ -1,3 +1,7 @@
+<div align="center">
+<img src="assets/images/arkhe-banner.jpg" alt="ARKHE ZERO BANNER" width="100%" />
+</div>
+
 # ◯_● ARKHE-ZERO
 > **El legado no se hereda. Se firma.**
 
