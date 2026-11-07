@@ -31,9 +31,8 @@ Immutably logged · Tamper-evident · Crypto-agile architecture
 
 📊 Telemetría del Arquitecto
 
-![KRONOS Stats](https://github-readme-stats.vercel.app/api?username=Marcorojas17&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Marcorojas17&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true)
+![](https://img.shields.io/badge/KRONOS-51%2F49%2F100-7DFF7A?style=for-the-badge)
+![](https://img.shields.io/github/repo-size/Marcorojas17/kronos-protocol?color=5AF2FF&label=ARKHE-ZERO&style=for-the-badge)
 ---
 
 🛠️ Stack Tecnológico
