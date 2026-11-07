@@ -1,69 +1,48 @@
-# ⚡ ARKHE-ZERO ⚡
+# ⚡ Arquitecto de Legado Digital | Creador de ARKHE-ZERO
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=7DFF7A&center=true&vCenter=true&width=600&lines=El+legado+no+se+hereda.+Se+firma.;Vengo+de+Toluca.+No+de+Silicon+Valley.;51%25+Humano+%C2%B7+49%25+IA+%C2%B7+100%25+Real;Construimos+la+llave+antes+de+la+cerradura." alt="Typing SVG" />
+> *"El legado no se hereda. Se firma."*
 
-**Arquitecto de ARKHE-ZERO** · Custodio de Kronos Protocol · Toluca, México 🇲🇽
+Soy el creador de **ARKHE-ZERO**, un ecosistema de 25 secciones diseñado para certificar la autoría digital, la procedencia del contenido y la co-creatividad entre humanos e IA a través del **Protocolo de Co-Creatividad Simbiótica (PCS)**.
 
-| Estado | Seguridad | Roadmap | Estándar |
-| :---: | :---: | :---: | :---: |
-| [![Status](https://img.shields.io/badge/STATUS-ACTIVE_VERDE_0-7DFF7A?style=for-the-badge&logo=statuspage&logoColor=black)](https://sycro-valdovinos.github.io/ARKHE-ZERO/) | ![Security](https://img.shields.io/badge/SECURITY-SHA--256_+_GPG-black?style=for-the-badge&logo=gnuprivacyguard) | ![Roadmap](https://img.shields.io/badge/ROADMAP-Criptografia_Post--Cuantica-5AF2FF?style=for-the-badge) | ![Explorando](https://img.shields.io/badge/EXPLORANDO-W3C_VC_Verifiable_Credentials-white?style=for-the-badge&logo=w3c&logoColor=black) |
-
----
-
-### 🖥️ SCDR-002 · Symbiotic Creativity Movement
-
-*(Ejemplo conceptual de la interfaz de usuario)*
-
-```bash
-$ npm i @pq-signature/scdr-002
-+ @pq-signature/scdr-002@2.0.1
-added 48 packages in 2.1s
-$ pip install scdr-002
-+ scdr-002-2.0.1
-Successfully installed scdr-002-2.0.1
-✓ cryptographic signing enabled
-```
-
-Infrastructure Cryptographic for Human-AI Co-Authorship
-Immutably logged · Tamper-evident · Crypto-agile architecture
+[![GitHub ARKHE-ZERO](https://img.shields.io/badge/🔱_ARKHE--ZERO-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO)
+[![PCS RFC](https://img.shields.io/badge/📜_PCS--RFC--0001-3776AB?style=for-the-badge&logo=markdown&logoColor=white)](https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO/blob/main/specs/co-creativity/PCS-RFC-0001.md)
+[![Status](https://img.shields.io/badge/STATUS-BUILDING-00ffcc?style=for-the-badge&logo=githubactions&logoColor=black)](https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO/actions)
 
 ---
 
-📊 Telemetría del Arquitecto
+## 📊 Mis Estadísticas en GitHub
 
-![](https://img.shields.io/badge/KRONOS-51%2F49%2F100-7DFF7A?style=for-the-badge)
-![](https://img.shields.io/github/repo-size/Marcorojas17/kronos-protocol?color=5AF2FF&label=ARKHE-ZERO&style=for-the-badge)
----
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SYCRO-VALDOVINOS&show_icons=true&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=ffd700&text_color=00ffcc" alt="Estadísticas de GitHub" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SYCRO-VALDOVINOS&theme=radical&hide_border=true&background=0a0a0f&stroke=00ffcc&ring=ffd700&fire=ffd700&currStreakNum=00ffcc" alt="Racha de GitHub" width="48%" />
+</div>
 
-🛠️ Stack Tecnológico
+## 🛠️ Tecnologías y Herramientas
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Termux](https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=android&logoColor=white)
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <br>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white" />
+  <img src="https://img.shields.io/badge/IPFS-65C2CB?style=for-the-badge&logo=ipfs&logoColor=white" />
+</div>
 
----
+## 🌙 Soy un Búho Nocturno
 
-🛡️ El Sello Kintsugi (Concepto)
+*Esta sección se actualiza automáticamente con [WakaTime](https://wakatime.com/) para mostrar mis hábitos de código.*
 
-El protocolo ARKHE-chain-v1 utiliza un modelo de "Grietas Doradas" (Kintsugi). Cada archivo modificado rompe la cadena, pero deja un rastro criptográfico.
-
-(Nota: El siguiente es un mockup de UI, no representa una ejecución real del sistema).
-
-```json
-{
-  "magic": "KINTSUGI-V1",
-  "signer": "did:kronos:human:ejemplo",
-  "file": "README.md",
-  "content_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
-  "golden_crack": ["███ ███ ███ ███"],
-  "gold_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111"
-}
-```
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ---
 
-"La IA puede mentir, alucinar o ser hackeada. La matemática no."
-— Marco Antonio Valdovinos
+<div align="center">
+  <i>◯_● · 51/49/100 · ARKHE-ZERO · SCDR-001</i>
+</div>
