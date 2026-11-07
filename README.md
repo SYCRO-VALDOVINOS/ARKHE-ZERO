@@ -31,16 +31,9 @@ Immutably logged · Tamper-evident · Crypto-agile architecture
 
 📊 Telemetría del Arquitecto
 
-<img src="https://github-readme-stats.vercel.app/api?username=Marcorojas17&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
+![KRONOS Stats](https://github-readme-stats.vercel.app/api?username=Marcorojas17&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true)
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Marcorojas17&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
-
-### KRONOS 51/49/100 ◯_●
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Marcorojas17&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Marcorojas17&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
-</div>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Marcorojas17&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true)
 ---
 
 🛠️ Stack Tecnológico
