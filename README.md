@@ -31,11 +31,16 @@ Immutably logged · Tamper-evident · Crypto-agile architecture
 
 📊 Telemetría del Arquitecto
 
-GitHub Stats Top Languages
-<img src="https://github-readme-stats.vercel.app/api?username=SYCRO-VALDOVINOS&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true" width="100%" /> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SYCRO-VALDOVINOS&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Marcorojas17&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=SYCRO-VALDOVINOS&theme=radical&fire=7DFF7A&ring=5AF2FF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=7DFF7A&sideLabels=5AF2FF&background=0D1117&hide_border=true" alt="GitHub Streak" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Marcorojas17&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
 
+### KRONOS 51/49/100 ◯_●
+
+<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=Marcorojas17&show_icons=true&theme=radical&title_color=7DFF7A&icon_color=5AF2FF&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Marcorojas17&layout=compact&theme=radical&title_color=7DFF7A&text_color=ffffff&bg_color=0D1117&hide_border=true" width="49%" />
+</div>
 ---
 
 🛠️ Stack Tecnológico
