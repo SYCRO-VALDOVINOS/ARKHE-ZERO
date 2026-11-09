@@ -1,33 +1,35 @@
-import { firmarPQC, validarSello } from '@/lib/qv-pqc.js';
+import { NextResponse } from "next/server";
+import { firmarPQC, validarSello } from "../../../lib/qv-pqc.js";
+
+export const dynamic = "force-dynamic";
+const FOLIO_RAIZ = "2608276846490-9H.CNLK";
 
 export async function POST(req) {
-  const { folio, sello_qv } = await req.json();
-  const FOLIO_RAIZ = "2608276846490-9H.CNLK";
+  const b = await req.json().catch(() => ({}));
+  const { folio_cliente, sello_qv } = b;
   
-  if (folio !== FOLIO_RAIZ) {
-    return Response.json({ ok: false, "ΔΨ": 0, error: "Folio inválido" }, { status: 403 });
+  if (folio_cliente !== FOLIO_RAIZ && b.folio !== FOLIO_RAIZ) {
+    return NextResponse.json({ ok: false, error: "Folio inválido", "ΔΨ": 0 }, { status: 403 });
   }
   
-  if (await validarSello(sello_qv)) {
-    const firmaPQC = await firmarPQC(sello_qv);
-    return Response.json({
+  if (await validarSello(sello_qv) || await validarSello(b.folio_cliente ? b.sello_qv : b.sello_qv)) {
+    const firmaPQC = await firmarPQC(sello_qv || "test");
+    return NextResponse.json({
       ok: true,
       "ΔΨ": "∞",
-      mensaje: "ARKHÉ ZERO VALIDADO - TOLUCA-GLOBAL",
+      mensaje: "ARKHÉ ZERO VALIDADO - PQC REAL",
       ...firmaPQC,
-      archivos: 1330,
-      co_creatividad: "51% Humano / 49% IA - VALDOVINOS"
+      co_creatividad: "51% Humano / 49% IA"
     });
   }
-  return Response.json({ ok: false, "ΔΨ": 0, error: "Sello inválido" }, { status: 403 });
+  return NextResponse.json({ ok: false, "ΔΨ": 0, error: "Sello inválido" }, { status: 403 });
 }
 
 export async function GET() {
   const firma = await firmarPQC("GET");
-  return Response.json({
-    servicio: "ARKHÉ ZERO Auth",
-    folio: "2608276846490-9H.CNLK",
-    status: "KYBER/DILITHIUM OK - NIST FIPS 203/204",
+  return NextResponse.json({
+    servicio: "ARKHÉ ZERO PQC",
+    status: "ML-DSA-87 OK",
     pqc: firma
   });
 }
