@@ -22,14 +22,6 @@ jobs:
           console.log('1330 archivos verificados');
           "
       
-      - name: Deploy TOLUCA-GLOBAL
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.ORG_ID }}
-          vercel-project-id: ${{ secrets.PROJECT_ID }}
-          vercel-args: '--prod'
-      
       - name: Kintsugi Log
         run: |
           echo "[■■■■■] 51% Humano / 49% IA - VALDOVINOS"
