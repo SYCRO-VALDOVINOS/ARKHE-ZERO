@@ -16,3 +16,5 @@ __pycache__/
 skills-lock.json
 arkhe-manifest.jsonl
 ish-iphone/
+.next
+node_modules
