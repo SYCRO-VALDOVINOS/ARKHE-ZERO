@@ -9,3 +9,4 @@ Protocolo de co-creatividad humano-IA con anclaje post-cuántico.
 - KYBER/DILITHIUM: Firma PQC
 - MCP Server: Interoperabilidad Gemini/Llama/Claude
 - Local-first: Verificación sin internet
+sycro-web conectado
