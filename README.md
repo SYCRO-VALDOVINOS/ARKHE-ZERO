@@ -1,4 +1,7 @@
 # ARKHE-ZERO
+
+[![ARKHE-ZERO CI](https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO/actions/workflows/ci.yml/badge.svg)](https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO/actions/workflows/ci.yml)
+
 Protocolo local-first para sellar autoria humano-IA PCS 51/49 con SHA-256, RFC 8785 y firmas hibridas Ed25519 + ML-DSA.
 - URL: https://sycro-valdovinos.github.io/ARKHE-ZERO
 - Spec: spec/arkhe-pcs-v1.schema.json CC-BY-4.0
