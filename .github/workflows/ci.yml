@@ -19,7 +19,10 @@ jobs:
           python-version: '3.11'
       - name: Install JS deps
         run: npm install
-      - name: Verify JS - Ed25519 + ML-DSA-65 + RFC8785
+      - name: Verify JS
         run: node scripts/generate-and-verify-vectors.mjs
-      - name: Verify Python - Ed25519 + SHA-256
-        run: python packages/core/verify.py spec/test-vectors/pcs-v1-valid.json spec/test-vectors/pcs-v1-tampered.json
+      - name: Verify Python valid must PASS
+        run: python packages/core/verify.py spec/test-vectors/pcs-v1-valid.json
+      - name: Verify Python tampered must FAIL
+        run: |
+          if python packages/core/verify.py spec/test-vectors/pcs-v1-tampered.json; then echo "ERROR: tampered deberia fallar" && exit 1; else echo "OK: tampered rechazado como se esperaba"; fi
