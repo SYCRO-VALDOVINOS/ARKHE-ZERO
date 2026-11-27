@@ -2,14 +2,14 @@ name: ARKHÉ KRONOS - Superior Automation
 
 on:
 
+  push:
+    branches: [main]
+  workflow_dispatch:
+
 permissions:
   issues: write
   pull-requests: write
   contents: read
-
-  push:
-    branches: [main]
-  workflow_dispatch:
 
 jobs:
   validar-qv:
