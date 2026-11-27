@@ -1,10 +1,9 @@
 import fs from 'node:fs';
 const pcs = JSON.parse(fs.readFileSync('spec/test-vectors/pcs-v1-valid.json','utf8'));
+const mldsa = pcs.signatures["mldsa-65"];
+const mldsaSig = typeof mldsa === "string" ? mldsa : (mldsa?.signature_base64 || mldsa?.signature || null);
 const vc = {
-  "@context": [
-    "https://www.w3.org/ns/credentials/v2",
-    "https://arkhe-zero.sycro.dev/contexts/pcs-v1.jsonld"
-  ],
+  "@context": ["https://www.w3.org/ns/credentials/v2","https://arkhe-zero.sycro.dev/contexts/pcs-v1.jsonld"],
   "id": "urn:arkhe:pcs:pcs-v1-valid",
   "type": ["VerifiableCredential", "ArkhePcsCredential"],
   "issuer": "did:arkhe:sycro-valdovinos",
@@ -22,13 +21,10 @@ const vc = {
     "verificationMethod": "did:arkhe:sycro-valdovinos#ed25519-1",
     "proofPurpose": "assertionMethod",
     "proofValue": pcs.signatures.ed25519.signature_base64,
-    "arkhe_mldsa65_proofValue": pcs.signatures["mldsa-65"]?.signature_base64 || null,
+    "arkhe_mldsa65_proofValue": mldsaSig,
     "arkhe_canonical_payload_sha256": pcs.signatures.canonical_payload_sha256,
     "arkhe_signing_input_sha256": pcs.signatures.signing_input_sha256
   }
 };
-fs.mkdirSync('spec/test-vectors', { recursive: true });
 fs.writeFileSync('spec/test-vectors/vc-v1-valid.json', JSON.stringify(vc, null, 2));
-console.log("VC exportado con anchoring incluido");
-console.log("keys arkhePcs:", Object.keys(vc.credentialSubject.arkhePcs));
-console.log("anchoring:", JSON.stringify(vc.credentialSubject.arkhePcs.anchoring).slice(0,120));
+console.log("VC exportado, mldsaSig:", String(mldsaSig).slice(0,30));
