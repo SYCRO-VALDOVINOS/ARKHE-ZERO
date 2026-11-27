@@ -28,3 +28,7 @@ jobs:
       - name: Verify Python tampered must FAIL
         run: |
           if python packages/core/verify.py spec/test-vectors/pcs-v1-tampered.json; then echo "ERROR: tampered deberia fallar" && exit 1; else echo "OK: tampered rechazado como se esperaba"; fi
+      - name: Export VC Fase 2
+        run: node scripts/export-vc.mjs
+      - name: Verify VC Fase 2
+        run: node scripts/verify-vc.mjs

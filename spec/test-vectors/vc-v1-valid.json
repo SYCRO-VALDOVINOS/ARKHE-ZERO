@@ -1,0 +1,94 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://arkhe-zero.sycro.dev/contexts/pcs-v1.jsonld"
+  ],
+  "id": "urn:arkhe:pcs:pcs-v1-valid",
+  "type": [
+    "VerifiableCredential",
+    "ArkhePcsCredential"
+  ],
+  "issuer": "did:arkhe:sycro-valdovinos",
+  "validFrom": "2026-11-27T00:00:00Z",
+  "credentialSubject": {
+    "id": "did:arkhe:sycro-valdovinos",
+    "arkhePcs": {
+      "spec_version": "arkhe-pcs/1.0",
+      "domain_separation": "ARKHE-PCS-V1\n",
+      "payload": {
+        "issued_at": "2026-11-27T18:00:00Z",
+        "id": "arkhe-pcs-vector-0001",
+        "metadata": {
+          "rights": "CC-BY-4.0 / PCS-51-49",
+          "title": "ARKHE-ZERO PCS v1 Reference Vector",
+          "identifier": "urn:sha256:bb272b1baa29e8dbe2e551a880b31d5fa715a632b92eda75e27a8eef5ded482c",
+          "creator": "Marco Antonio Rojas Valdovinos"
+        },
+        "governance": {
+          "ai_pct": 49,
+          "human_pct": 51,
+          "model": "PCS-51-49",
+          "human_author": "Marco Antonio Rojas Valdovinos",
+          "ai_agents": [
+            {
+              "name": "arkhe-architect-agent",
+              "role": "canonical-schema-and-crypto-verification"
+            }
+          ]
+        },
+        "algorithms": {
+          "signatures": [
+            "Ed25519",
+            "ML-DSA-65"
+          ],
+          "canonicalization": "RFC-8785",
+          "hash": "SHA-256"
+        },
+        "artifact": {
+          "mime_type": "text/plain",
+          "size_bytes": 50,
+          "file_name": "arkhe-reference-artifact.txt",
+          "sha256": "bb272b1baa29e8dbe2e551a880b31d5fa715a632b92eda75e27a8eef5ded482c"
+        }
+      },
+      "signatures": {
+        "canonical_payload_sha256": "c9ccdd224b8abfef1e5b8c81ddc29a3d7eed82ab7cf9107c24769334c8f8bccd",
+        "signing_input_sha256": "05031e65f59f8810d22cbcacd85081344c8394ef816553930311a1f596e63ac2",
+        "ed25519": {
+          "public_key_spki_base64": "MCowBQYDK2VwAyEAz0L9byHUqpBgkdU1jq7UB2HNC1jFKZ+Zw8Yx8aeEuaU=",
+          "signature_base64": "YWrGNDznu21NQZHmCHTA81CvrfrGHOkzjywUVUBvZhLJwwuD+/w6AJuRpUkedgXCmLOJfGsKD5LfLkugXWlqAA=="
+        },
+        "ml_dsa": {
+          "variant": "ML-DSA-65",
+          "public_key_base64": "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",
+          "signature_base64": "b+gngPdx5dDJttP+CF3B2ysJ5YsV1v6h+H9m2q0OEnjv9LxAjR1yNC9Www1XkfbDQ87fAw854Koi3DB5/1YM3vrdm2LEzCjqtKZhEZyVkkfj/541S9xxO+4wwyuwUzV7vmI9QV6yBhC4S8aV4k+xXBQNyptkyQEO2e1EFXxoO9A1bGvZlsUdJ+87yPzD3q4XKMycpdoim+vG3lBMPpm9r1+YCj1Qj5y4oO8fqzqrb90+8wb+jPg5CDTLWdkvm3p2eqO4354uK5iM0X5/561mCWjAS53qgNQCVMDgEBza/4zg1PhHNhDcZxSlIYRa3qajTkuhk3+csOFElJhkWot300OfGHpZ/hFWez3RoXhDRorMRiqdmMUDLjtHdJVJ6PlGHfD8ff6X4aU+s35v1BwJ0d38XGS+HUQbBUCJjxaMXTsFDaqLd8fPYYYNtRjSwDsNgbXiAVsgGqgCgPuPRjREPa/3h+QdUI5HmkvWgKF5HUc0N7ReWL3dHonaXxJr8RDDE3jsMT426w+YBQFsTldqsND2Zrbi8Jm9Su9f7xSTgl9rsTUXwjb2xFZ6VCBRUjWMVgebucZO8XZtjUfVgbNYdazrnv3RrpDLQmN+jmvIzl+wCcJ8AoswN2mlDsRDW0jB1gCTKZmIy6/aV16c8jldFRuwNH/CqoyEL5aRa7Ifv9tE5muv2n1JgyAwD3lgPPveOIgD/pXVqBbEmF6NbbrTJmxiXvNHEkG3buPA7YO+5dJiz9kmHQMS3CQrEghJM+yW3E3B+9CsI5ulnDyIUCf0Ry0JY0pCOgOoODUydUKtaPLx4iSWrTH0wBFmGn0OCiydirRxbka1QBcHE5XwySqTOledIBOvdw0jvLbu5mtDyOP6aGyOhoWU+hpQKgK8kbrHD0QDzT/4Bu5YjfDYyEt89D48r83oyS3WCDd4MJvF/9u4nJzSdPg+WFjVYtvxjK5ILT0dvglPB84NcYmVnGI09Tn+B1Tf8QRyWsyss3oqcaxIhou9B6eoJOdv6Mdg5i+bb5wWERScBflBA44t8BDEKxmPLq8KBMf6W8Ma56wP6B3udqyoNYyNJRPQpO4RFF5IKYkMgXkrYJxG+x4wIA69QK3dha9akOyN8OwFGf5PXZ6XuU1jCeVDWwuHiAx3F9+sQ2G0fZtFKQQ8uUD7aQeV0Zxgz4FDehCUzDtV3uTsnYgiIo84QOoJ3+d2yODRdC8My5xjfolF4F1BF7tQkL7iElc1C6etsWIq/Ltb4+HVCm14fD3aNv5mv/fbinGe75lLZ8ESBo3SYLAh1hG5biNAAoQ+u2X9vWcISaWN41S2IH747g2+VL/AHUpgfGk8lfK+mwmopIFq9sLzywqVKv1cCZmPU39c57ZVcd3j865XVTiY3vIKsRNI31dGq42aa1U8DRmdel4WcrObVNo/J51jNM2Kkx1hnNXurmTjWqiz0rZdDn4lWKl5j1HjCIkTQpI0GwpVuIgUGBfLvJx99E5WJuOJOC5EAmrwZcqgftYGODEhxkYbGZgg83JG94jtBuVWQUMN+4sP+ZhFaJw9AG8XcT1JE/mdHX17QCNDuaIWQ9Fdtb4BsgkAdBN61GDScnp1yTtBgoNOUKUIg/TMwO6fgkbz6Uugt/6csFR6dCqrvS7HuhMgJffKjbP7CJc7dU7jFzlM86hkVIi4tE3wP9gSMeZUQnW1qMlkwqLuPgFMJvz/vEuEO901iM3Z8YCmEH0Yz++SoURQ9HKqeH6fZPzigQEWCuUo2/qrDhMrp2bEK+Qd89cS0qCqRd1HY/OD4iKMSmqRlJVOTs/x66mod7kkJUVm///cZyBsA2Uj+lGMbta14yPmY1LrZtQ4Tuc+iahhjR3uHQU1N9oH5gmYXZTw2MdeoITxiOlKicyBK2pJ68rCn10WodVgwuGnBvxCfpd0DZgV2dcFaAX/cUyOs06uJuqN5Gz9qHSBnDRKH/4DjX/gkOPZXj1ia5xitrb2bYZaLkAWvS5p4M5yWfkSp9e/uDQeuR02YKVr17jcdWwtSO9BfoinTQDtxn1FVwfLOUGml8UrnxDuW4bzzzK4gu9BWcL9h6DR+Y71m6IEAwaVMDaybfzt+Y6IR/Vt9az7Qev4bMU/j5NlnAgtPn1ifAUJaiYfC8+eek43w3jPqqcXTUh/kM/o6bAGqKqqXVIw7MZfcT8mrjyMbsI5GCmV0gN6MG3soz+oCrCmi6D4l3Dr7iUibxhfy7gquWzpF5yNdmj+bRkiqi0tlNeBquvdckwwwbVPpdxCYgdMVEchYrhfY8RwKtwqg8M/bR3rXmhRcBfdT00enQg9PznIxxz/nfRlVUWvVTASnqBQckck+IerIPmAUmX/6pZwYdd34kmNFh/0fiIF9yNV7QlhItWXzXKZDaW/WrEagHsj2e9ejdbgMzmpriQbX3wtH8Zt21lfmjgwt3QnwukhZQMrlG5/T2++N5CyZApJ8zf1CsuvSGLCRC+fRvDv6msrVCEfyXNQ6igv9yBmuE+2ZCzk9hq1ulQRA7+NomG6oHxYeEzcXztPY/1yUxMXRFHzyosXbRGh+2qC2WVWsse36+G1BYukmX0l2I0bSUUZucLOBK2lsYSZp5jXWWgz9K2o4hxwFpWwH1DAyQ1eYl131LKQF9GCA4CgL4Y7DmVBZKVQMLgGoeMnO/5bUBIbmP406t0u1dufA85EmHwvxPyfROXE5pgvuqBDfrngX5UoTlNf56++JHnsyTTj/3XB3fYSermFNb2EiMgYA2vi0jLEhGKzPVTyRoUO4WEZf+ehNIkhtEp1v7IGuW4nFw4ExZD3DGpP+Yg9i5FYMna2I+V/EUBVlVR5xG8prG5U7xWfFnTgHULitEyCR8EZWSyV0qL/6dafwTf+2TU3n8GsJYMJgvC7FzVIqg7MDX7xUBdJLK5Muh9Fe8b71rahoR3SdJsixbr4DqVpToJVIYX3vsPr9rR/Y9kZWIxN6y7XgaV8a1OBoVhEfqQ015lW+l7lfONNemm+k9cDG8KPCZUK6EeI5PeEPyCpddQ5bX9VCct1CpA84WcRjQ3JMbn9E//JxS8Uyg8Pcewf4xDPAZ8PlGduA2QandTpgwPG1KAlDecrdNQwrIAIcAbtkM0l/zmLJSo+ssZPnuQYTRft0uzrcSLrlAM368DoIwQWOYtig3kW5qnPndYvHWQ4eGfYYIdx2ZLxeiyc5ZGAzy6Wv9LTPiFtmGn6phuM7yWq4+xZiX8+5LOlesSQo1ttKBBs3ccKLSYmD4IRfqee8RQ3fyC3nvEuEwFrUUlreJPeGk6vRTrtVgSi49OMp5iuqI2lMVHsnyGt1e4lIQNutq5jIdfYe+sK9ec8HrsIWJJBU1yvl5889V81zBpZYHdlumUQi7AATkBFd+xs8XTUkJEeTN1p0ih0tKu/voV6ePXD1OLEBtT2Ibhu52Z4Ik5Ro5XTL1O9dhDMd9W+p+rJt9i+3TWug+KwzXnMNnVpC8bKfTGGZox8GkZnhXpZWHP9JHzUcSG+ENOtGUaDOP/ubhWW15eJ+XqHBr3eD3apFRvUhvCbd5ldqQu9qw393rhXve93wCXYKs1aoWcIEpF37OygslzBWuWxA6vZ9KtTxiRbJQNgySK13pC7cVYRjqs+wJY1ip+c+W0HuVhSHZTXt3O9YgXuupEiokWEn1q/6L6OwA3SC/mFPNfgoEElI26/fsIetGKemTfdJdHHR4Bykc+uttBVHfgngQv362GgptKr1VU0z9DHkzUnQ5/slAugWqQ/u5hfrJUPl9R/m+a6Oqf6WI+cXDbhT+Ji/agPyZdYkIV7ASE7wPygAEYq5DfghIYbOSQOoHsDFdmJUbV3nFfHP3w/BHIZt+CCAIqSiEqnszykF2xfMNYEWx4hX2xNXSGzEKRjInw+XXvhdUrzqQdsOn05rVsEsGutm1p+ccs4KFmJNqk2VWLmgopQAEy7XwpUgP8e/OdaTQszvLrZoUDIwPIQ3N9qXYIrIOp+XVQavmj5P8YL5KeoWgYROvqvNOsIiOdTUuss1GtkdiSiHhPuLa2iptqBWCyBNTGBA4BG7qzZ8srV0W5n6+FylqdmLxmm5vK3URh6t62X08UYOngEK50HpfY6HW4nDiNJcSYsFDqMQI1o66G2t/YxGfgK26uBrvBZ8YmYVrEMmCBAMjBxotAZYlFRNdWXxvymHSLLcJyDCHcIHKmV7uknEttqB3NePavrF2WnHMUKztl/JZK7md5GPUBQItp5HZ8Y81q56/nEwhBdfNCO7Y/lgAiCI1JtMXyBhdBndggVJIpqzRSy/DYKNkV7Ni7/MAV9TJMXpqm1JXdm0T2tpHKXPnKo0xoWRVx+r/uAjaKjzggqOk91s9jf4gArR2h0hK7M7hcaYncHHUuNjpLcAAAAAAAAAAAAAAAAAAAABgsUHSEo"
+        },
+        "signature_bundle_sha256": "656bd85204217869e5e64840fdf91b98815b2015851e2970525f119c66cdd380"
+      }
+    },
+    "governance": {
+      "ai_pct": 49,
+      "human_pct": 51,
+      "model": "PCS-51-49",
+      "human_author": "Marco Antonio Rojas Valdovinos",
+      "ai_agents": [
+        {
+          "name": "arkhe-architect-agent",
+          "role": "canonical-schema-and-crypto-verification"
+        }
+      ]
+    },
+    "human_pct": 51,
+    "ai_pct": 49
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "cryptosuite": "eddsa-rdfc-2022",
+    "verificationMethod": "did:arkhe:sycro-valdovinos#ed25519-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "YWrGNDznu21NQZHmCHTA81CvrfrGHOkzjywUVUBvZhLJwwuD+/w6AJuRpUkedgXCmLOJfGsKD5LfLkugXWlqAA==",
+    "arkhe_mldsa65_proofValue": null,
+    "arkhe_canonical_payload_sha256": "c9ccdd224b8abfef1e5b8c81ddc29a3d7eed82ab7cf9107c24769334c8f8bccd",
+    "arkhe_signing_input_sha256": "05031e65f59f8810d22cbcacd85081344c8394ef816553930311a1f596e63ac2"
+  }
+}
