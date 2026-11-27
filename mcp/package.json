@@ -1,0 +1,9 @@
+{
+  "name": "@arkhe-zero/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for ARKHE-ZERO PCS-51-49 verification",
+  "type": "module",
+  "bin": { "arkhe-zero-mcp": "./server.mjs" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.12.0" },
+  "license": "Apache-2.0"
+}

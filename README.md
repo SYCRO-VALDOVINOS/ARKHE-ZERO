@@ -16,3 +16,19 @@ Archivo -> SHA-256 -> Payload PCS 51/49 -> RFC 8785 -> Prefijo ARKHE-PCS-V1 -> F
 - Autenticidad Ed25519 + ML-DSA: Si, matematico
 - Fecha cierta NOM-151 / eIDAS: NO, requiere PSC / QTSA via RFC 3161
 - Identidad civil: NO, requiere e.firma / certificado cualificado
+
+## MCP (Model Context Protocol)
+
+Instala ARKHE-ZERO en tu agente:
+
+```json
+{
+  "mcpServers": {
+    "arkhe-zero": {
+      "command": "npx",
+      "args": ["-y", "@arkhe-zero/mcp"]
+    }
+  }
+}
+Tools: arkhe_get_llms, arkhe_get_schema, arkhe_verify_sha256, arkhe_verify_local_file
+Nota legal: NO emite sello de tiempo legal (NO_EMITIDA). Requiere PSC NOM-151 / QTSA eIDAS vía RFC 3161.
