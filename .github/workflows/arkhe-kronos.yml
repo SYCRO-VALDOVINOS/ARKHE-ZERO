@@ -1,6 +1,12 @@
 name: ARKHÉ KRONOS - Superior Automation
 
 on:
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: read
+
   push:
     branches: [main]
   workflow_dispatch:
@@ -49,6 +55,6 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                labels: ['ARKHÉ-ZERO', 'TOLUCA-GLOBAL', `manifest:e8d9eac8`]
+                labels: ['ARKHÉ-ZERO', 'TOLUCA-GLOBAL']
               });
             }
