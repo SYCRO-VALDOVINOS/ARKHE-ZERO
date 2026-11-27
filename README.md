@@ -1,5 +1,4 @@
 
----
 
 # 🔱 ARKHÉ-ZERO
 ### Índice Primigenio Soberano · Local-First · Humano-IA
@@ -124,6 +123,4 @@ Este proyecto indica como licencia *Apache License 2.0*. Consulta el archivo `LI
 `YHDRYH-92CE` - `PCS-RFC-0001` - `Pacto 51/49/100`
 
 _La procedencia se documenta. La integridad se verifica. El legado se preserva._
-
----
 
