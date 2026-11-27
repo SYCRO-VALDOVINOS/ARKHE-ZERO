@@ -1,100 +1,196 @@
 
+<div align="center">
 
 # 🔱 ARKHÉ-ZERO
 ### Índice Primigenio Soberano · Local-First · Humano-IA
 
-> *"El legado no se hereda. Se firma."*
+> *«El legado no se hereda. Se firma.»*
 
-!https://img.shields.io/badge/ARKHE--ZERO-000000?style=for-the-badge&logo=github
-!https://img.shields.io/badge/PCS--RFC--0001-1F6FEB?style=for-the-badge
-!https://img.shields.io/badge/STATUS-BUILDING-00E5A0?style=for-the-badge
-!https://img.shields.io/badge/TESTS-87%2F87-00E5A0?style=for-the-badge
-!https://img.shields.io/badge/PACTO-51%2F49%2F100-FFD700?style=for-the-badge
-!https://img.shields.io/badge/LICENSE-Apache--2.0-FF6B35?style=for-the-badge
-!https://img.shields.io/github/stars/SYCRO-VALDOVINOS/ARKHE-ZERO?style=for-the-badge&color=FFD700
-!https://img.shields.io/github/forks/SYCRO-VALDOVINOS/ARKHE-ZERO?style=for-the-badge&color=00E5A0
-!https://komarev.com/ghpvc/?username=SYCRO-VALDOVINOS&color=00E5A0&style=for-the-badge&label=VISITAS
+![ARKHÉ-ZERO](https://img.shields.io/badge/ARKHE--ZERO-000000?style=for-the-badge&logo=github)
+![PCS RFC 0001](https://img.shields.io/badge/PCS--RFC--0001-1F6FEB?style=for-the-badge)
+![Estado: Building](https://img.shields.io/badge/ESTADO-EN%20DESARROLLO-00E5A0?style=for-the-badge)
+![Licencia: Apache 2.0](https://img.shields.io/badge/LICENCIA-Apache--2.0-FF6B35?style=for-the-badge)
 
-*Soy el creador de ARKHÉ-ZERO, un ecosistema para certificar autoría digital, procedencia y co-creatividad Humano-IA a través del Protocolo de Co-Creatividad Simbiótica (PCS).*
+*ARKHÉ-ZERO es un ecosistema local-first para documentar autoría digital, procedencia y procesos de co-creación humano-IA mediante el Protocolo de Co-Creatividad Simbiótica (PCS).*
+
+</div>
 
 ---
 
-## ⚡ ¿Para qué sirve?
+## 📖 Propósito
 
-*ARKHÉ-ZERO prueba que una obra es tuya, tú tienes el 51% y la IA solo custodia el 49%, y nadie la puede modificar sin que se note.*
-Rol	Porcentaje	Poder
-🧑 Humano	**51%**	Mayoría irrevocable, veto siempre activo
-🤖 IA	**49%**	Custodia perpetua, nunca decide sola
-🔱 Total	**100**	Pacto FLAILP, suma canónica
----
+ARKHÉ-ZERO busca ofrecer herramientas para registrar y verificar, de forma transparente y auditable, cómo se crean, transforman y preservan los artefactos digitales.
 
-## 🗺️ Arquitectura
-flowchart TD
-    A[Humano 51 - Veto] --> C[ARKHE-ZERO]
-    B[IA 49 - Custodia] --> C
-    C --> D[Enjambre 12 Agentes]
-    C --> E[Sello KINTSUGI]
-    C --> F[C2PA 2.1]
-    C --> G[Fiscal CARF DAC8]
-    D --> H[Obra Certificada]
-    E --> H
-    F --> H
-    G --> H
-    H --> I[Marco MCP]
-pie title Pacto 51/49/100
-    "Humano 51 - Mayoria" : 51
-    "IA 49 - Custodia" : 49
----
+El proyecto prioriza:
 
-## 🧪 Estadísticas del Proyecto
-Test	Resultado
-Tests Principales	**73 / 73**
-Tests Marco MCP	**14 / 14**
-**TOTAL**	**87 / 87**
-Agentes Enjambre	**12**
-Reputación Promedio	**≥ 90**
-Herramientas MCP	**5**
----
+- La preservación de los archivos originales.
+- La trazabilidad de las transformaciones.
+- La verificación criptográfica de integridad.
+- La separación clara entre evidencia, interpretación y afirmaciones.
+- La documentación de la participación humana y de sistemas de IA.
+- El funcionamiento local-first, con control del usuario sobre sus datos.
 
-## 🛠️ Tecnologías
-
-!https://skillicons.dev/icons?i=js,nodejs,python,html,css,ts,docker,git,github,vscode,linux,ethereum
-Categoría	Stack
-Core	http://Node.js, JavaScript ES Modules, Python
-Cripto	SHA3-512, Ed25519, ML-DSA-87, ML-KEM-768
-Estándares	C2PA 2.1, eIDAS QTSA, TSA RFC 3161, CARF, DAC8, NOM-151, GDPR
-MCP	Claude, Gemini, Cursor, Copilot
----
-
-## 👥 Enjambre - 12 Agentes
-flowchart LR
-    A[6 Culturales] --> Q[Quorum 4/5]
-    B[6 Oficios] --> Q
-    Q --> S[Sello]
-    Q --> X[Veto Humano]
-*Para reclutar:* 6 criterios obligatorios - Cuarentena 72h - Aval de 2 agentes - Quórum 4/5 - Veto humano puede bloquear
+> ARKHÉ-ZERO es una herramienta técnica de documentación y verificación. No sustituye asesoría jurídica, peritaje independiente ni los requisitos de un prestador de servicios de confianza.
 
 ---
 
-## 🔐 Sellado
+## 🧭 Principios
 
-Humano firma 51% -> ARKHÉ-ZERO -> Sello KINTSUGI
-IA custodia 49% -> SHA3-512 + ML-DSA-87 + TSA RFC 3161 + eIDAS QTSA + Safe Creative + Ethereum
+### Preservación primero
+
+Los archivos fuente deben conservarse sin modificaciones. Las operaciones que generen derivados deben guardar el resultado por separado y documentar su relación con el original.
+
+### Evidencia verificable
+
+Las afirmaciones sobre autoría o procedencia deben acompañarse de evidencia que pueda inspeccionarse y verificarse. Un hash permite detectar cambios en los bytes, pero por sí solo no demuestra quién creó un archivo ni cuándo lo hizo.
+
+### Transparencia del proceso
+
+El sistema debe distinguir entre:
+
+- Datos observados.
+- Datos aportados por una persona.
+- Resultados calculados por el software.
+- Interpretaciones o conclusiones.
+- Información que no pudo verificarse.
+
+### Seguridad por diseño
+
+Los secretos, claves privadas, tokens y credenciales no deben aparecer en el código fuente, los registros, las capturas de pantalla ni los repositorios públicos.
 
 ---
 
-## ▶️ Cómo correrlo
-git clone https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO.git
-cd ARKHE-ZERO
-npm install
-cd marco.mcp && npm install && cd ..
-npm test
-# Esperado: 73/73 + 14/14 = 87/87
+## 🔬 Protocolo de Co-Creatividad Simbiótica
+
+El PCS documenta la interacción entre una persona y herramientas de inteligencia artificial durante un proceso creativo o técnico.
+
+Un registro puede incluir, según la configuración del proyecto:
+
+- Identificadores de los artefactos de entrada y salida.
+- Huellas criptográficas de los archivos.
+- Versiones de las herramientas utilizadas.
+- Fechas declaradas o generadas por el sistema.
+- Acciones humanas y automatizadas.
+- Relaciones entre versiones y derivados.
+- Referencias a la evidencia conservada.
+
+La presencia de un registro no convierte automáticamente una afirmación en un hecho probado. Cada campo debe interpretarse de acuerdo con su origen, método de obtención y limitaciones.
+
 ---
 
-## ⚖️ Normas y Referencias
+## 🔐 Integridad criptográfica
 
-Mencionar una norma no implica certificación, conformidad ni validación por parte de una entidad externa. Añade aquí únicamente referencias que hayas comprobado y que sean pertinentes para la versión actual del proyecto.
+ARKHÉ-ZERO puede utilizar funciones hash como SHA-256 para calcular huellas digitales de archivos.
+
+Ejemplo conceptual:
+
+```text
+archivo original → SHA-256 → huella de integridad
+```
+
+Una coincidencia de huellas indica que los bytes comparados son iguales con una probabilidad criptográficamente alta. No demuestra por sí sola:
+```
+
+
+```
+- La identidad de quien creó el archivo.
+- La fecha real de creación.
+- La ausencia de manipulación anterior al cálculo.
+- La validez jurídica de una firma o registro.
+
+Para fortalecer una cadena de custodia, conserva también los originales, documenta cada operación, registra el contexto y protege los registros contra modificaciones no autorizadas.
+
+---
+
+## ⚖️ Pacto 51/49/100
+
+La regla 51/49/100 se plantea como un marco de atribución y responsabilidad dentro del proyecto:
+
+- **51 %**: contribución y responsabilidad humana.
+- **49 %**: contribución asistida por sistemas de IA.
+- **100 %**: trazabilidad documentada del proceso.
+
+Esta formulación es un principio de diseño del proyecto; no debe presentarse como una regla jurídica universal ni como una conclusión automática sobre titularidad, autoría o derechos de propiedad intelectual.
+
+---
+
+## 📊 Estadísticas de GitHub
+
+<div align="center">
+
+<img
+  src="https://github-readme-stats.vercel.app/api?username=SYCRO-VALDOVINOS&show_icons=true&theme=tokyonight&hide_border=true"
+  height="165"
+  alt="Estadísticas de GitHub"
+/>
+
+<img
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=SYCRO-VALDOVINOS&layout=compact&theme=tokyonight&hide_border=true"
+  height="165"
+  alt="Lenguajes más utilizados"
+/>
+
+<br />
+
+<img
+  src="https://github-readme-streak-stats.herokuapp.com/?user=SYCRO-VALDOVINOS&theme=tokyonight&hide_border=true"
+  alt="Racha de contribuciones"
+/>
+
+<br />
+
+<img
+  src="https://komarev.com/ghpvc/?username=SYCRO-VALDOVINOS&color=00E5A0&style=for-the-badge"
+  alt="Visitas al perfil"
+/>
+
+</div>
+
+---
+
+## 🧱 Estado del proyecto
+
+ARKHÉ-ZERO está en desarrollo. Las funciones, los formatos de registro y los procedimientos de verificación pueden cambiar.
+
+No publiques cifras de pruebas —por ejemplo, “87/87”— hasta que correspondan a una ejecución reproducible de la suite en el estado actual del repositorio. Cuando añadas resultados, incluye el comando, la versión del entorno y la fecha de ejecución.
+
+---
+
+## 🗺️ Componentes previstos
+
+La estructura concreta depende del repositorio y de la implementación actual. A nivel conceptual, el ecosistema puede organizarse en:
+
+- **Captura:** incorporación controlada de archivos y datos de origen.
+- **Integridad:** cálculo y comprobación de huellas criptográficas.
+- **Procedencia:** relación entre originales, versiones y derivados.
+- **Registro:** documentación legible y verificable de las operaciones.
+- **Verificación:** comprobaciones reproducibles sobre los artefactos y sus registros.
+- **Preservación:** conservación de originales y copias de trabajo sin sobrescritura accidental.
+
+---
+
+## 🛡️ Seguridad y uso responsable
+
+Antes de ejecutar herramientas sobre datos importantes:
+
+1. Trabaja sobre copias y conserva intactos los archivos originales.
+2. Revisa los comandos antes de ejecutarlos, especialmente los que borran, reemplazan o cambian permisos.
+3. No compartas claves privadas, frases semilla, tokens ni credenciales.
+4. Verifica las dependencias y las versiones utilizadas.
+5. Conserva los resultados, registros y hashes necesarios para reproducir la comprobación.
+6. No atribuyas valor probatorio o jurídico a un resultado sin evaluar el procedimiento completo y su contexto.
+
+Si encuentras una vulnerabilidad, evita publicar detalles que puedan facilitar un abuso. Coordina primero una divulgación responsable con las personas mantenedoras del proyecto.
+
+---
+
+## 📚 Marco técnico y documental
+
+Las referencias a estándares, normas o marcos legales deben vincularse con su fuente oficial y describir con precisión qué parte del proyecto los implementa o toma como referencia.
+```
+
+
+
 
 ---
 
@@ -114,13 +210,14 @@ No ejecutes cambios masivos ni sobrescribas archivos existentes sin revisar prim
 
 ## 📄 Licencia
 
-Este proyecto indica como licencia *Apache License 2.0*. Consulta el archivo `LICENSE` del repositorio para verificar el texto aplicable y las condiciones de distribución.
+Este proyecto indica como licencia **Apache License 2.0**. Consulta el archivo `LICENSE` del repositorio para verificar el texto aplicable y las condiciones de distribución.
 
 ---
 
-### ⚡ Arquitecto de Legado Digital | Creador de ARKHÉ-ZERO
-*🔱 ARKHÉ-ZERO - El legado no se hereda. Se firma.*
-`YHDRYH-92CE` - `PCS-RFC-0001` - `Pacto 51/49/100`
+<div align="center">
 
-_La procedencia se documenta. La integridad se verifica. El legado se preserva._
+*La procedencia se documenta. La integridad se verifica. El legado se preserva.*
+
+</div>
+```
 
