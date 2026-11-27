@@ -1,7 +1,31 @@
 # ARKHE-ZERO
-> Protocolo local-first para sellar autoria humano-IA PCS 51/49 con SHA-256, RFC 8785 y firmas hibridas Ed25519 + ML-DSA.
-- Spec: spec/arkhe-pcs-v1.schema.json
-- Codigo: Apache-2.0
-- JCS: packages/core/jcs.mjs
-- Verificacion JS: scripts/generate-and-verify-vectors.mjs
-- Verificacion Python: packages/core/verify.py
+
+> Local-first human-AI authorship provenance protocol. PCS-51-49 (51% Human / 49% AI). SHA-256 + RFC 8785 canonical JSON + hybrid Ed25519 + ML-DSA-65 (NIST FIPS 204). W3C VC 2.0. Auditable report with Merkle Root. EU AI Act Art. 50. Legal timestamp NOT issued (NO_EMITIDA) - requires PSC NOM-151 / QTSA eIDAS via RFC 3161.
+
+## Docs
+
+- [README](https://sycro-valdovinos.github.io/ARKHE-ZERO/)
+- [PCS Schema v1](https://sycro-valdovinos.github.io/ARKHE-ZERO/spec/arkhe-pcs-v1.schema.json)
+- [Valid PCS Vector](https://sycro-valdovinos.github.io/ARKHE-ZERO/spec/test-vectors/pcs-v1-valid.json)
+- [Valid VC](https://sycro-valdovinos.github.io/ARKHE-ZERO/spec/test-vectors/vc-v1-valid.json)
+- [Audit Report](https://sycro-valdovinos.github.io/ARKHE-ZERO/spec/test-vectors/audit-report-v1.json)
+
+## Quickstart
+
+git clone https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO.git
+npm install
+node scripts/generate-and-verify-vectors.mjs --verify-only
+node scripts/verify-vc.mjs && node scripts/verify-audit-report.mjs
+Guarantees
+
+✅ Byte integrity SHA-256
+✅ Hybrid signature Ed25519 + ML-DSA-65
+✅ Governance PCS-51-49 traceability
+❌ NO legal timestamp - NO_EMITIDA
+❌ NO civil identity - requires e.firma / qualified certificate
+
+License
+
+Spec: CC-BY-4.0
+Code: Apache-2.0
+Author: Marco Antonio Rojas Valdovinos
