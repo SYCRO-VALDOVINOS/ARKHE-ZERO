@@ -1,34 +1,27 @@
 
-
 ---
-
-<div align="center">
 
 # 🔱 ARKHÉ-ZERO
 ### Índice Primigenio Soberano · Local-First · Humano-IA
+
 > *"El legado no se hereda. Se firma."*
 
-https://img.shields.io/badge/ARKHE--ZERO-000000?style=for-the-badge&logo=github https://img.shields.io/badge/PCS--RFC--0001-1F6FEB?style=for-the-badge https://img.shields.io/badge/STATUS-BUILDING-00E5A0?style=for-the-badge https://img.shields.io/badge/TESTS-87%2F87-00E5A0?style=for-the-badge https://img.shields.io/badge/PACTO-51%2F49%2F100-FFD700?style=for-the-badge https://img.shields.io/badge/LICENSE-Apache--2.0-FF6B35?style=for-the-badge
+!https://img.shields.io/badge/ARKHE--ZERO-000000?style=for-the-badge&logo=github
+!https://img.shields.io/badge/PCS--RFC--0001-1F6FEB?style=for-the-badge
+!https://img.shields.io/badge/STATUS-BUILDING-00E5A0?style=for-the-badge
+!https://img.shields.io/badge/TESTS-87%2F87-00E5A0?style=for-the-badge
+!https://img.shields.io/badge/PACTO-51%2F49%2F100-FFD700?style=for-the-badge
+!https://img.shields.io/badge/LICENSE-Apache--2.0-FF6B35?style=for-the-badge
+!https://img.shields.io/github/stars/SYCRO-VALDOVINOS/ARKHE-ZERO?style=for-the-badge&color=FFD700
+!https://img.shields.io/github/forks/SYCRO-VALDOVINOS/ARKHE-ZERO?style=for-the-badge&color=00E5A0
+!https://komarev.com/ghpvc/?username=SYCRO-VALDOVINOS&color=00E5A0&style=for-the-badge&label=VISITAS
 
 *Soy el creador de ARKHÉ-ZERO, un ecosistema para certificar autoría digital, procedencia y co-creatividad Humano-IA a través del Protocolo de Co-Creatividad Simbiótica (PCS).*
-
-</div>
-
----
-
-## 📊 Mis Estadísticas en GitHub
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=SYCRO-VALDOVINOS&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SYCRO-VALDOVINOS&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-<br/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=SYCRO-VALDOVINOS&theme=tokyonight&hide_border=true" />
-<br/>
-<img src="https://komarev.com/ghpvc/?username=SYCRO-VALDOVINOS&color=00E5A0&style=for-the-badge&label=VISITAS" />
-</div>
 
 ---
 
 ## ⚡ ¿Para qué sirve?
+
 *ARKHÉ-ZERO prueba que una obra es tuya, tú tienes el 51% y la IA solo custodia el 49%, y nadie la puede modificar sin que se note.*
 Rol	Porcentaje	Poder
 🧑 Humano	**51%**	Mayoría irrevocable, veto siempre activo
@@ -56,23 +49,17 @@ pie title Pacto 51/49/100
 
 ## 🧪 Estadísticas del Proyecto
 Test	Resultado
-Tests Principales	**73 / 73 ✅**
-Tests Marco MCP	**14 / 14 ✅**
-**TOTAL**	**87 / 87 ✅**
+Tests Principales	**73 / 73**
+Tests Marco MCP	**14 / 14**
+**TOTAL**	**87 / 87**
 Agentes Enjambre	**12**
 Reputación Promedio	**≥ 90**
 Herramientas MCP	**5**
-xychart-beta
-    title "Tests ARKHE-ZERO - 87/87"
-    x-axis ["e2e Nav", "e2e Reclut", "API", "Enjambre", "Web-Flow", "Agentes", "C2PA", "Coautoria", "Fiscal", "Indice-Cero", "Nav", "Pacto", "PQC", "Sello", "MCP"]
-    y-axis "Tests" 0 --> 15
-    bar [4, 6, 4, 5, 4, 6, 4, 5, 6, 7, 4, 6, 6, 5, 14]
 ---
 
 ## 🛠️ Tecnologías
-<div align="center">
-<img src="https://skillicons.dev/icons?i=js,nodejs,python,html,css,ts,docker,git,github,vscode,linux,ethereum" />
-</div>
+
+!https://skillicons.dev/icons?i=js,nodejs,python,html,css,ts,docker,git,github,vscode,linux,ethereum
 Categoría	Stack
 Core	http://Node.js, JavaScript ES Modules, Python
 Cripto	SHA3-512, Ed25519, ML-DSA-87, ML-KEM-768
@@ -97,30 +84,46 @@ IA custodia 49% -> SHA3-512 + ML-DSA-87 + TSA RFC 3161 + eIDAS QTSA + Safe Creat
 
 ---
 
-## 🚀 Proyectos Destacados
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=SYCRO-VALDOVINOS&repo=ARKHE-ZERO&theme=tokyonight&hide_border=true" />
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=SYCRO-VALDOVINOS&repo=valdovinos-oficial&theme=tokyonight&hide_border=true" />
-</div>
-
----
-
 ## ▶️ Cómo correrlo
-
 git clone https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO.git
 cd ARKHE-ZERO
 npm install
-cd http://marco.mcp && npm install && cd ..
+cd marco.mcp && npm install && cd ..
 npm test
-Esperado: 73/73 + 14/14 = 87/87
+# Esperado: 73/73 + 14/14 = 87/87
+---
 
-<div align="center">
+## ⚖️ Normas y Referencias
+
+Mencionar una norma no implica certificación, conformidad ni validación por parte de una entidad externa. Añade aquí únicamente referencias que hayas comprobado y que sean pertinentes para la versión actual del proyecto.
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Para proponer cambios:
+
+1. Abre un issue describiendo el problema o la propuesta.
+2. Explica el alcance y los posibles efectos sobre archivos existentes.
+3. Incluye pruebas reproducibles cuando corresponda.
+4. Evita incorporar secretos, datos personales o archivos que no deban publicarse.
+5. Propón cambios pequeños y revisables.
+
+No ejecutes cambios masivos ni sobrescribas archivos existentes sin revisar primero el diff.
+
+---
+
+## 📄 Licencia
+
+Este proyecto indica como licencia *Apache License 2.0*. Consulta el archivo `LICENSE` del repositorio para verificar el texto aplicable y las condiciones de distribución.
+
+---
 
 ### ⚡ Arquitecto de Legado Digital | Creador de ARKHÉ-ZERO
 *🔱 ARKHÉ-ZERO - El legado no se hereda. Se firma.*
 `YHDRYH-92CE` - `PCS-RFC-0001` - `Pacto 51/49/100`
 
-</div>
+_La procedencia se documenta. La integridad se verifica. El legado se preserva._
 
 ---
 
