@@ -2,17 +2,11 @@ import fs from 'node:fs';
 import crypto from 'node:crypto';
 function sha256Hex(b){ return crypto.createHash('sha256').update(b).digest('hex'); }
 function load(p){ return JSON.parse(fs.readFileSync(p,'utf8')); }
-
 const pcs = load('spec/test-vectors/pcs-v1-valid.json');
 const vc = load('spec/test-vectors/vc-v1-valid.json');
-
-// Merkle Root simple: hash de los hashes de cada artefacto
-const leaves = [
-  sha256Hex(Buffer.from(JSON.stringify(pcs.payload), 'utf8')),
-  sha256Hex(Buffer.from(JSON.stringify(vc.credentialSubject.arkhePcs.payload), 'utf8')),
-];
-const merkleRoot = sha256Hex(Buffer.from(leaves.join(''), 'utf8'));
-
+const leaf1 = sha256Hex(fs.readFileSync('spec/test-vectors/pcs-v1-valid.json'));
+const leaf2 = sha256Hex(fs.readFileSync('spec/test-vectors/vc-v1-valid.json'));
+const merkleRoot = sha256Hex(Buffer.from(leaf1 + leaf2, 'utf8'));
 const report = {
   report_version: "arkhe-audit/1.0",
   generated_at: new Date().toISOString(),
@@ -25,7 +19,8 @@ const report = {
     canonicalizacion: "RFC 8785 JCS verificado",
     interoperabilidad: "W3C VC 2.0 verificado - vc-v1-valid.json PASS",
     merkle_root_sha256: merkleRoot,
-    leaves_sha256: leaves,
+    leaves_sha256: [leaf1, leaf2],
+    leaves_desc: ["sha256(pcs-v1-valid.json completo)", "sha256(vc-v1-valid.json completo)"],
     canonical_payload_sha256: pcs.signatures.canonical_payload_sha256,
     signature_bundle_sha256: pcs.signatures.signature_bundle_sha256
   },
@@ -45,7 +40,7 @@ const report = {
   }
 };
 fs.writeFileSync('spec/test-vectors/audit-report-v1.json', JSON.stringify(report, null, 2));
-console.log("AUDIT REPORT GENERADO");
+console.log("AUDIT REPORT REGENERADO con hojas distintas");
+console.log("leaf1:", leaf1.slice(0,16)+"...");
+console.log("leaf2:", leaf2.slice(0,16)+"...");
 console.log("merkle_root:", merkleRoot);
-console.log("legal:", report.constancia_legal.status);
-console.log("transparencia:", report.transparencia_ia.norma);

@@ -1,6 +1,6 @@
 {
   "report_version": "arkhe-audit/1.0",
-  "generated_at": "2026-11-27T18:58:19.375Z",
+  "generated_at": "2026-11-27T18:59:22.955Z",
   "scope": "ARKHE-ZERO PCS v1 - Fase 3 Cumplimiento",
   "governance": {
     "ai_pct": 49,
@@ -20,10 +20,14 @@
     "firma_postcuantica": "ML-DSA-65 NIST FIPS 204 verificado - len 4412",
     "canonicalizacion": "RFC 8785 JCS verificado",
     "interoperabilidad": "W3C VC 2.0 verificado - vc-v1-valid.json PASS",
-    "merkle_root_sha256": "4b9520fe5b60fd367373aa45a16430789e6481c7049ff7de2a3423412fd8da74",
+    "merkle_root_sha256": "c97d0e69cb2f3234fef3399231ed700394da6d879ca5be23f815260102104004",
     "leaves_sha256": [
-      "1eee7ff7ffaa7087a0b2a9349a99aa6da9df3e3f4c6300b1b4e62928de02e4ec",
-      "1eee7ff7ffaa7087a0b2a9349a99aa6da9df3e3f4c6300b1b4e62928de02e4ec"
+      "afb5a1a000889b22aed826eb5acc96a9daa00ef0d1635924a11db487fbbb317c",
+      "9246c2fd8fa6a4bfd0bb6d03ef8ba02105d390182c6144d1f89ebf6a410a4750"
+    ],
+    "leaves_desc": [
+      "sha256(pcs-v1-valid.json completo)",
+      "sha256(vc-v1-valid.json completo)"
     ],
     "canonical_payload_sha256": "c9ccdd224b8abfef1e5b8c81ddc29a3d7eed82ab7cf9107c24769334c8f8bccd",
     "signature_bundle_sha256": "656bd85204217869e5e64840fdf91b98815b2015851e2970525f119c66cdd380"
