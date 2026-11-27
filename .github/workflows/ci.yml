@@ -19,6 +19,8 @@ jobs:
           python-version: '3.11'
       - name: Install JS deps
         run: npm install
+      - name: Install Python deps
+        run: pip install cryptography
       - name: Verify JS
         run: node scripts/generate-and-verify-vectors.mjs
       - name: Verify Python valid must PASS
