@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sycro-valdovinos.github.io/ARKHE-ZERO/spec/arkhe-pcs-v1.schema.json",
+  "title": "ARKHE-ZERO PCS v1 Signed Provenance Envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spec_version", "domain_separation", "payload", "signatures"],
+  "properties": {
+    "spec_version": { "const": "arkhe-pcs/1.0" },
+    "domain_separation": { "const": "ARKHE-PCS-V1\n" },
+    "payload": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "issued_at", "artifact", "governance", "metadata", "algorithms"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^arkhe-pcs-[a-zA-Z0-9_-]{6,64}$" },
+        "issued_at": { "type": "string", "format": "date-time" },
+        "artifact": {
+          "type": "object", "additionalProperties": false,
+          "required": ["file_name", "size_bytes", "mime_type", "sha256"],
+          "properties": {
+            "file_name": { "type": "string", "minLength": 1 },
+            "size_bytes": { "type": "integer", "minimum": 0 },
+            "mime_type": { "type": "string", "minLength": 3 },
+            "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+          }
+        },
+        "governance": {
+          "type": "object", "additionalProperties": false,
+          "required": ["model", "human_pct", "ai_pct", "human_author", "ai_agents"],
+          "properties": {
+            "model": { "const": "PCS-51-49" },
+            "human_pct": { "const": 51 },
+            "ai_pct": { "const": 49 },
+            "human_author": { "type": "string", "minLength": 1 },
+            "ai_agents": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["name", "role"], "properties": { "name": { "type": "string" }, "role": { "type": "string" } } } }
+          }
+        },
+        "metadata": {
+          "type": "object", "additionalProperties": false,
+          "required": ["title", "creator", "identifier", "rights"],
+          "properties": {
+            "title": { "type": "string" },
+            "creator": { "type": "string" },
+            "identifier": { "type": "string" },
+            "rights": { "type": "string" }
+          }
+        },
+        "algorithms": {
+          "type": "object", "additionalProperties": false,
+          "required": ["hash", "canonicalization", "signatures"],
+          "properties": {
+            "hash": { "const": "SHA-256" },
+            "canonicalization": { "const": "RFC-8785" },
+            "signatures": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "signatures": {
+      "type": "object", "additionalProperties": false,
+      "required": ["canonical_payload_sha256", "signing_input_sha256", "ed25519", "ml_dsa", "signature_bundle_sha256"],
+      "properties": {
+        "canonical_payload_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "signing_input_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "ed25519": { "type": "object", "required": ["public_key_spki_base64", "signature_base64"], "properties": { "public_key_spki_base64": { "type": "string" }, "signature_base64": { "type": "string" } } },
+        "ml_dsa": { "type": "object", "required": ["variant", "public_key_base64", "signature_base64"], "properties": { "variant": { "type": "string" }, "public_key_base64": { "type": "string" }, "signature_base64": { "type": "string" } } },
+        "signature_bundle_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    }
+  }
+}
