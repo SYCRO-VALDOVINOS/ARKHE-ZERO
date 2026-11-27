@@ -21,3 +21,4 @@ node_modules
 pleroma/.env
 pleroma/postgres
 pleroma/uploads
+pleroma/.env
