@@ -1,3 +1,4 @@
+import sys
 import json, hashlib, sys, pathlib
 def canonicalize(v):
     if v is None or isinstance(v, bool): return json.dumps(v, separators=(',', ':'), ensure_ascii=False)
@@ -32,8 +33,13 @@ def verify(path):
     print("ML-DSA-65: SKIP en Python sin oqs - verificar en JS")
     return errs
 if __name__ == "__main__":
+    failed = False
     for p in sys.argv[1:]:
         print(f"\n=== {p} ===")
         e = verify(p)
+        if e:
+            failed = True
         print("RESULT:", "FAIL - RECHAZADO" if e else "PASS - VALIDO")
         for x in e: print(" -", x)
+    import sys as _s
+    _s.exit(1 if failed else 0)
