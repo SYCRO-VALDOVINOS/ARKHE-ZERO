@@ -6,10 +6,10 @@
 
 > *«El legado no se hereda. Se firma.»*
 
-![ARKHÉ-ZERO](https://img.shields.io/badge/ARKHE--ZERO-000000?style=for-the-badge&logo=github)
-![PCS RFC 0001](https://img.shields.io/badge/PCS--RFC--0001-1F6FEB?style=for-the-badge)
-![Estado: Building](https://img.shields.io/badge/ESTADO-EN%20DESARROLLO-00E5A0?style=for-the-badge)
-![Licencia: Apache 2.0](https://img.shields.io/badge/LICENCIA-Apache--2.0-FF6B35?style=for-the-badge)
+[ARKHÉ-ZERO](https://img.shields.io/badge/ARKHE--ZERO-000000?style=for-the-badge&logo=github)
+[PCS RFC 0001](https://img.shields.io/badge/PCS--RFC--0001-1F6FEB?style=for-the-badge)
+[Estado: En desarrollo](https://img.shields.io/badge/ESTADO-EN%20DESARROLLO-00E5A0?style=for-the-badge)
+[Licencia: Apache 2.0](https://img.shields.io/badge/LICENCIA-Apache--2.0-FF6B35?style=for-the-badge)
 
 *ARKHÉ-ZERO es un ecosistema local-first para documentar autoría digital, procedencia y procesos de co-creación humano-IA mediante el Protocolo de Co-Creatividad Simbiótica (PCS).*
 
@@ -25,7 +25,7 @@ El proyecto prioriza:
 
 - La preservación de los archivos originales.
 - La trazabilidad de las transformaciones.
-- La verificación criptográfica de integridad.
+- La verificación de integridad mediante huellas criptográficas.
 - La separación clara entre evidencia, interpretación y afirmaciones.
 - La documentación de la participación humana y de sistemas de IA.
 - El funcionamiento local-first, con control del usuario sobre sus datos.
@@ -60,7 +60,29 @@ Los secretos, claves privadas, tokens y credenciales no deben aparecer en el có
 
 ---
 
-## 🔬 Protocolo de Co-Creatividad Simbiótica
+## 🧪 Resultado de pruebas
+
+Resultado en el checkout verificado el 27 nov 2026:
+
+| Suite | Resultado |
+| --- | --- |
+| Tests principales | 73 / 73 |
+| Tests Marco MCP | 14 / 14 |
+| **Total** | **87 / 87** |
+
+Comando ejecutado:
+
+```bash
+node --test tests/**/*.test.js && cd marco.mcp && npm test
+Entorno de esa ejecución: checkout local `ARKHE-RECUPERADO`, 27 nov 2026. Si cambias el código, vuelve a ejecutar y actualiza fecha, comando y resultado.
+
+Esto verifica formato y sellos en JS en esa ejecución. No verifica por sí solo el contrato Solidity ni prevalencia jurídica.
+
+No publiques la cifra `87/87` como vigente si no corresponde a una ejecución reproducible del estado actual del repositorio.
+
+---
+
+## 🔬 Protocolo de Co-Creatividad Simbiótica (PCS)
 
 El PCS documenta la interacción entre una persona y herramientas de inteligencia artificial durante un proceso creativo o técnico.
 
@@ -78,21 +100,36 @@ La presencia de un registro no convierte automáticamente una afirmación en un 
 
 ---
 
+## ⚖️ Pacto 51/49/100
+
+La regla 51/49/100 se plantea como un principio de diseño de atribución y responsabilidad dentro del proyecto:
+Rol	Porcentaje	Alcance en este proyecto
+Humano	51%	Responsabilidad y decisión humana documentada
+IA	49%	Asistencia documentada, sin decisión autónoma
+Total documentado	100%	Trazabilidad del proceso
+Esta formulación es un principio de diseño del proyecto. No debe presentarse como una regla jurídica universal ni como una conclusión automática sobre titularidad, autoría o derechos de propiedad intelectual.
+
+Diagrama conceptual, no contrato:
+flowchart TD
+    A[Humano 51 - Decisión] --> C[ARKHE-ZERO]
+    B[IA 49 - Asistencia] --> C
+    C --> D[Registro]
+    C --> E[Sello KINTSUGI]
+    D --> H[Artefacto documentado]
+    E --> H
+pie title Pacto 51/49/100 - Principio de diseño
+    "Humano 51 - Decisión" : 51
+    "IA 49 - Asistencia" : 49
+---
+
 ## 🔐 Integridad criptográfica
 
 ARKHÉ-ZERO puede utilizar funciones hash como SHA-256 para calcular huellas digitales de archivos.
 
 Ejemplo conceptual:
-
-```text
-archivo original → SHA-256 → huella de integridad
-```
-
+archivo original -> SHA-256 -> huella de integridad
 Una coincidencia de huellas indica que los bytes comparados son iguales con una probabilidad criptográficamente alta. No demuestra por sí sola:
-```
 
-
-```
 - La identidad de quien creó el archivo.
 - La fecha real de creación.
 - La ausencia de manipulación anterior al cálculo.
@@ -102,49 +139,44 @@ Para fortalecer una cadena de custodia, conserva también los originales, docume
 
 ---
 
-## ⚖️ Pacto 51/49/100
+## 🛠️ Tecnologías
 
-La regla 51/49/100 se plantea como un marco de atribución y responsabilidad dentro del proyecto:
+### Implementado / verificado en tests
 
-- **51 %**: contribución y responsabilidad humana.
-- **49 %**: contribución asistida por sistemas de IA.
-- **100 %**: trazabilidad documentada del proceso.
+Verificar contra el código y la salida de `npm test` en el commit actual antes de afirmar cada punto en este README.
+Categoría	Stack
+Core	http://Node.js, JavaScript ES Modules
+Pruebas	`node --test`
+MCP	Claude, Gemini, Cursor, Copilot
+### Referencia / previsto
 
-Esta formulación es un principio de diseño del proyecto; no debe presentarse como una regla jurídica universal ni como una conclusión automática sobre titularidad, autoría o derechos de propiedad intelectual.
+Mencionar una norma no implica certificación, conformidad ni validación por parte de una entidad externa. Añade aquí únicamente referencias que hayas comprobado y que sean pertinentes para la versión actual del proyecto.
+Categoría	Referencia
+Cripto	SHA3-512, Ed25519, ML-DSA-87, ML-KEM-768
+Estándares	C2PA 2.1, eIDAS QTSA, TSA RFC 3161, CARF, DAC8, NOM-151, GDPR
+> Si una tecnología está en esta segunda tabla, significa que se cita como referencia o trabajo previsto, no que ya esté implementada y verificada en este repositorio.
 
 ---
 
-## 📊 Estadísticas de GitHub
+## 👥 Enjambre - 12 Agentes (previsto)
 
-<div align="center">
+Propuesta conceptual, no afirmar como implementado sin código y tests que lo cubran:
+flowchart LR
+    A[6 Culturales] --> Q[Quorum 4/5]
+    B[6 Oficios] --> Q
+    Q --> S[Sello]
+    Q --> X[Veto Humano]
+Criterios propuestos: 6 criterios obligatorios, cuarentena 72h, aval de 2 agentes, quórum 4/5, veto humano puede bloquear.
 
-<img
-  src="https://github-readme-stats.vercel.app/api?username=SYCRO-VALDOVINOS&show_icons=true&theme=tokyonight&hide_border=true"
-  height="165"
-  alt="Estadísticas de GitHub"
-/>
+---
 
-<img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=SYCRO-VALDOVINOS&layout=compact&theme=tokyonight&hide_border=true"
-  height="165"
-  alt="Lenguajes más utilizados"
-/>
-
-<br />
-
-<img
-  src="https://github-readme-streak-stats.herokuapp.com/?user=SYCRO-VALDOVINOS&theme=tokyonight&hide_border=true"
-  alt="Racha de contribuciones"
-/>
-
-<br />
-
-<img
-  src="https://komarev.com/ghpvc/?username=SYCRO-VALDOVINOS&color=00E5A0&style=for-the-badge"
-  alt="Visitas al perfil"
-/>
-
-</div>
+## ▶️ Cómo correrlo
+git clone https://github.com/SYCRO-VALDOVINOS/ARKHE-ZERO.git
+cd ARKHE-ZERO
+npm install
+cd marco.mcp && npm install && cd ..
+npm test
+Resultado esperado en el estado verificado: `73/73 + 14/14 = 87/87`.
 
 ---
 
@@ -152,20 +184,7 @@ Esta formulación es un principio de diseño del proyecto; no debe presentarse c
 
 ARKHÉ-ZERO está en desarrollo. Las funciones, los formatos de registro y los procedimientos de verificación pueden cambiar.
 
-No publiques cifras de pruebas —por ejemplo, “87/87”— hasta que correspondan a una ejecución reproducible de la suite en el estado actual del repositorio. Cuando añadas resultados, incluye el comando, la versión del entorno y la fecha de ejecución.
-
----
-
-## 🗺️ Componentes previstos
-
-La estructura concreta depende del repositorio y de la implementación actual. A nivel conceptual, el ecosistema puede organizarse en:
-
-- **Captura:** incorporación controlada de archivos y datos de origen.
-- **Integridad:** cálculo y comprobación de huellas criptográficas.
-- **Procedencia:** relación entre originales, versiones y derivados.
-- **Registro:** documentación legible y verificable de las operaciones.
-- **Verificación:** comprobaciones reproducibles sobre los artefactos y sus registros.
-- **Preservación:** conservación de originales y copias de trabajo sin sobrescritura accidental.
+No ejecutes cambios masivos ni sobrescribas archivos existentes sin revisar primero.
 
 ---
 
@@ -184,40 +203,18 @@ Si encuentras una vulnerabilidad, evita publicar detalles que puedan facilitar u
 
 ---
 
-## 📚 Marco técnico y documental
-
-Las referencias a estándares, normas o marcos legales deben vincularse con su fuente oficial y describir con precisión qué parte del proyecto los implementa o toma como referencia.
-```
-
-
-
-
----
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Para proponer cambios:
-
-1. Abre un issue describiendo el problema o la propuesta.
-2. Explica el alcance y los posibles efectos sobre archivos existentes.
-3. Incluye pruebas reproducibles cuando corresponda.
-4. Evita incorporar secretos, datos personales o archivos que no deban publicarse.
-5. Propón cambios pequeños y revisables.
-
-No ejecutes cambios masivos ni sobrescribas archivos existentes sin revisar primero el diff.
-
----
-
 ## 📄 Licencia
 
-Este proyecto indica como licencia **Apache License 2.0**. Consulta el archivo `LICENSE` del repositorio para verificar el texto aplicable y las condiciones de distribución.
+Este proyecto indica como licencia *Apache License 2.0*. Consulta el archivo `LICENSE` del repositorio para verificar el texto aplicable y las condiciones de distribución.
 
 ---
 
 <div align="center">
 
-*La procedencia se documenta. La integridad se verifica. El legado se preserva.*
+_La procedencia se documenta. La integridad se verifica. El legado se preserva._
+
+`PCS-RFC-0001` - `Pacto 51/49/100`
 
 </div>
-```
 
+ 
