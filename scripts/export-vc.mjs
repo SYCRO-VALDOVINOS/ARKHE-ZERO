@@ -1,8 +1,5 @@
 import fs from 'node:fs';
-
-// Lee tu sobre PCS v1 que ya tienes verificado en Fase 1
-const pcs = JSON.parse(fs.readFileSync('spec/test-vectors/pcs-v1-valid.json', 'utf8'));
-
+const pcs = JSON.parse(fs.readFileSync('spec/test-vectors/pcs-v1-valid.json','utf8'));
 const vc = {
   "@context": [
     "https://www.w3.org/ns/credentials/v2",
@@ -14,12 +11,7 @@ const vc = {
   "validFrom": "2026-11-27T00:00:00Z",
   "credentialSubject": {
     "id": "did:arkhe:sycro-valdovinos",
-    "arkhePcs": {
-      "spec_version": pcs.spec_version,
-      "domain_separation": pcs.domain_separation,
-      "payload": pcs.payload,
-      "signatures": pcs.signatures
-    },
+    "arkhePcs": pcs,
     "governance": pcs.payload.governance,
     "human_pct": pcs.payload.governance.human_pct,
     "ai_pct": pcs.payload.governance.ai_pct
@@ -35,10 +27,8 @@ const vc = {
     "arkhe_signing_input_sha256": pcs.signatures.signing_input_sha256
   }
 };
-
 fs.mkdirSync('spec/test-vectors', { recursive: true });
 fs.writeFileSync('spec/test-vectors/vc-v1-valid.json', JSON.stringify(vc, null, 2));
-console.log("VC exportado: spec/test-vectors/vc-v1-valid.json");
-console.log("type:", vc.type);
-console.log("issuer:", vc.issuer);
-console.log("governance:", vc.credentialSubject.governance);
+console.log("VC exportado con anchoring incluido");
+console.log("keys arkhePcs:", Object.keys(vc.credentialSubject.arkhePcs));
+console.log("anchoring:", JSON.stringify(vc.credentialSubject.arkhePcs.anchoring).slice(0,120));
