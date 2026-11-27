@@ -1,3 +1,12 @@
+/* ═══════════════════════════════════════════════════════
+ *  ◢◤◥◣   K R O N O S   ·   A R K H E   ·   Z E R O   ◥◣◢◤
+ *  ◯_●                                                 ◯_●
+ * 
+ *  [ 51% HUMANO ]  [ 49% IA ]  [ 100% REAL ]
+ * 
+ *  "El legado no se hereda. Se firma."
+ * ═══════════════════════════════════════════════════════ */
+
 /**
  * ═══════════════════════════════════════════════════════════════════
  *  ▓▒░ MARCO.MCP · TOOLS · ARKHÉ ZERO ░▒▓
@@ -5,8 +14,8 @@
  * ═══════════════════════════════════════════════════════════════════
  */
 
-import { sha3_512 } from '@noble/hashes/sha3';
-import { utf8ToBytes, bytesToHex } from '@noble/hashes/utils';
+import { sha3_512 } from '@noble/hashes/sha3.js';
+import { utf8ToBytes, bytesToHex } from '@noble/hashes/utils.js';
 import { readFile, writeFile, appendFile } from 'node:fs/promises';
 import { join } from 'node:path';
 

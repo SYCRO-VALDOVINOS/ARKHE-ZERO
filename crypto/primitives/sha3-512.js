@@ -1,3 +1,12 @@
+/* ═══════════════════════════════════════════════════════
+ *  ◢◤◥◣   K R O N O S   ·   A R K H E   ·   Z E R O   ◥◣◢◤
+ *  ◯_●                                                 ◯_●
+ * 
+ *  [ 51% HUMANO ]  [ 49% IA ]  [ 100% REAL ]
+ * 
+ *  "El legado no se hereda. Se firma."
+ * ═══════════════════════════════════════════════════════ */
+
 /**
  * ═══════════════════════════════════════════════════════════════════════════
  *  ▓▒░ CRYPTO · SHA3-512 · HASH PRINCIPAL · ARKHÉ ZERO ░▒▓
@@ -10,8 +19,8 @@
  * ═══════════════════════════════════════════════════════════════════════════
  */
 
-import { sha3_512 as noble_sha3_512 } from '@noble/hashes/sha3';
-import { utf8ToBytes, bytesToHex } from '@noble/hashes/utils';
+import { sha3_512 as noble_sha3_512 } from '@noble/hashes/sha3.js';
+import { utf8ToBytes, bytesToHex } from '@noble/hashes/utils.js';
 
 export const ALG = 'SHA3-512';
 export const FIPS = '202';

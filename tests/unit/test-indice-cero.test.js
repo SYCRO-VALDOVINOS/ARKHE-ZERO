@@ -1,3 +1,12 @@
+/* ═══════════════════════════════════════════════════════
+ *  ◢◤◥◣   K R O N O S   ·   A R K H E   ·   Z E R O   ◥◣◢◤
+ *  ◯_●                                                 ◯_●
+ * 
+ *  [ 51% HUMANO ]  [ 49% IA ]  [ 100% REAL ]
+ * 
+ *  "El legado no se hereda. Se firma."
+ * ═══════════════════════════════════════════════════════ */
+
 /* ═══════════════════════════════════════════════════════════════════════════ */
 /*                                                                           */
 /*   ██╗███╗   ██╗██████╗ ██╗ ██████╗███████╗                                */
@@ -31,7 +40,8 @@ const INDEX_ZERO = Object.freeze({
   safeCreativeArq: '2607146379465',
   safeCreativeCo: '2607086319439',
   sha256: 'f03f7e2d852617309457e0fe207f8f8bd2627d0b723de02f3b0ce05767219112',
-  ethereum: '0xd2c2a7e128e6c81b689b3b0d9e1b31a4f6f8df0391b7b6c05e7daa7fb895774c',
+  ethereumAddress: '0x0000000000000000000000000000000000000000',
+  ethereumTxHash: '0xd2c2a7e128e6c81b689b3b0d9e1b31a4f6f8df0391b7b6c05e7daa7fb895774c',
   eidas: 'Firmaprofesional QTSA',
 });
 
@@ -50,10 +60,15 @@ test('indice-cero · SHA-256 válido (64 hex chars)', () => {
   assert.ok(/^[0-9a-f]{64}$/.test(INDEX_ZERO.sha256));
 });
 
-test('indice-cero · Ethereum válido (0x + 40 hex)', () => {
-  assert.ok(INDEX_ZERO.ethereum.startsWith('0x'));
-  assert.equal(INDEX_ZERO.ethereum.length, 42);
-  assert.ok(/^0x[0-9a-f]{40}$/.test(INDEX_ZERO.ethereum));
+test('indice-cero · Ethereum address valida (0x + 40 hex)', () => {
+  assert.ok(INDEX_ZERO.ethereumAddress.startsWith('0x'));
+  assert.equal(INDEX_ZERO.ethereumAddress.length, 42);
+  assert.ok(/^0x[0-9a-f]{40}$/.test(INDEX_ZERO.ethereumAddress));
+});
+test('indice-cero · Ethereum tx hash valido (0x + 64 hex)', () => {
+  assert.ok(INDEX_ZERO.ethereumTxHash.startsWith('0x'));
+  assert.equal(INDEX_ZERO.ethereumTxHash.length, 66);
+  assert.ok(/^0x[0-9a-f]{64}$/.test(INDEX_ZERO.ethereumTxHash));
 });
 
 test('indice-cero · eIDAS QTSA declarado', () => {
