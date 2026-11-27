@@ -32,3 +32,7 @@ jobs:
         run: node scripts/export-vc.mjs
       - name: Verify VC Fase 2
         run: node scripts/verify-vc.mjs
+      - name: Generate Audit Report Fase 3
+        run: node scripts/generate-audit-report.mjs
+      - name: Verify Audit Report Fase 3
+        run: node scripts/verify-audit-report.mjs
