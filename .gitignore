@@ -18,3 +18,6 @@ arkhe-manifest.jsonl
 ish-iphone/
 .next
 node_modules
+pleroma/.env
+pleroma/postgres
+pleroma/uploads
