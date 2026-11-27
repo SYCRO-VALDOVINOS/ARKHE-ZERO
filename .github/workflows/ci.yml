@@ -1,0 +1,25 @@
+name: ARKHE-ZERO CI - Fase 1
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install JS deps
+        run: npm install
+      - name: Verify JS - Ed25519 + ML-DSA-65 + RFC8785
+        run: node scripts/generate-and-verify-vectors.mjs
+      - name: Verify Python - Ed25519 + SHA-256
+        run: python packages/core/verify.py spec/test-vectors/pcs-v1-valid.json spec/test-vectors/pcs-v1-tampered.json
